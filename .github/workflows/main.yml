@@ -22,6 +22,8 @@ jobs:
       run: npm ci
 
     - name: Build Astro site
+      env:
+        PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.PUBLIC_GA_MEASUREMENT_ID }}
       run: npm run build
 
     # Clean deployment - removes old files first

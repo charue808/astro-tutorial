@@ -1,0 +1,184 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const lastUpdated = '2025-09-27'
+---
+
+<BaseLayout
+	title="Privacy Policy"
+	description="Privacy policy for charlesgum.com covering Google Analytics cookies and Supabase data storage for experimental features."
+	publishedTime={lastUpdated}
+>
+	<main class="privacy-page">
+		<div class="container">
+			<h1>Privacy Policy</h1>
+			<p class="last-updated">Last updated: {lastUpdated}</p>
+			<section>
+				<h2>Overview</h2>
+				<p>This privacy policy explains how charlesgum.com collects, uses, and protects your information when you visit our wesbite and use our experimental features.</p>
+			</section>
+			<section>
+				<h2>🍪 Cookies & Analytics</h2>
+				<h3>Google Analytics</h3>
+				<p>We use Google Analytics to understand how visitors interact with your website. This service:</p>
+				<ul>
+					<li><strong>What it collects:</strong> Page views, time spent on site, browser type, general location (city/country level)</li>
+					<li><strong>Cookies used:</strong> <code>_ga</code>, <code>_ga_*</code> (expire after 6 months)</li>
+					<li><strong>Purpose:</strong> Website improvement and understanding visitor behavior</li>
+					<li><strong>Privacy settings:</strong> No advertising features, no cross-site tracking, secure cookies only</li>
+					<li><strong>Data sharing:</strong> Data is processed by Google according to their privacy policy</li>
+					<li><strong>Your control:</strong> You can disable tracking with browser settings or ad blockers</li>
+				</ul>
+				<div class="cookie-notice">
+					<h4>Cookie Consent</h4>
+					<p>By continuing to use this website, you consent to our use of cookies for analytics purposes. You can withdraw consent at any time by clearing your browser cookies or using privacy tools.</p>
+				</div>
+			</section>
+			<section>
+        <h2>🧪 Experimental Features & Data Storage</h2>
+        
+        <h3>Supabase Data Collection</h3>
+        <p>Our experimental pages (like the guestbook, quote machine, etc.) may collect and store data using Supabase. Here's what you should know:</p>
+
+        <h4>Data We May Collect:</h4>
+        <ul>
+          <li><strong>Guestbook:</strong> Your email address and messages you choose to leave</li>
+          <li><strong>Quote Machine:</strong> Quotes you save as favorites (no personal data)</li>
+          <li><strong>Weather Dashboard:</strong> City names you search for (no location tracking)</li>
+          <li><strong>Visitor Counter:</strong> Anonymous session IDs and timestamps</li>
+        </ul>
+
+        <h4>How We Use This Data:</h4>
+        <ul>
+          <li>To provide the functionality you requested (saving favorites, displaying messages, etc.)</li>
+          <li>To demonstrate web development techniques and database interactions</li>
+          <li>For learning and educational purposes</li>
+        </ul>
+
+        <h4>Data Retention:</h4>
+        <ul>
+          <li><strong>Anonymous data:</strong> May be retained indefinitely for demonstration purposes</li>
+          <li><strong>Personal data:</strong> You can request deletion by contacting us</li>
+          <li><strong>Visitor sessions:</strong> Automatically cleaned up after 24 hours of inactivity</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>🔒 Data Security</h2>
+        <p>We take reasonable measures to protect your data:</p>
+        <ul>
+          <li>All data transmission is encrypted (HTTPS)</li>
+          <li>Database access is restricted and monitored</li>
+          <li>No sensitive personal information (passwords, financial data) is collected</li>
+          <li>Experimental features are clearly labeled as such</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>🌍 Third-Party Services</h2>
+        
+        <h3>Services We Use:</h3>
+        <ul>
+          <li><strong>Google Analytics:</strong> Website analytics - <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+          <li><strong>Supabase:</strong> Database hosting - <a href="https://supabase.com/privacy" target="_blank">Privacy Policy</a></li>
+          <li><strong>DreamHost:</strong> Website hosting - <a href="https://www.dreamhost.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
+          <li><strong>External APIs:</strong> Quote API, Weather API (no personal data shared)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>✋ Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li><strong>Access:</strong> Request what data we have about you</li>
+          <li><strong>Deletion:</strong> Request deletion of your personal data</li>
+          <li><strong>Correction:</strong> Request correction of inaccurate data</li>
+          <li><strong>Opt-out:</strong> Stop using features that collect data</li>
+        </ul>
+        
+        <p>To exercise these rights, contact: <a href="mailto:privacy@charlesgum.com">privacy@charlesgum.com</a></p>
+      </section>
+
+      <section>
+        <h2>🔄 Changes to This Policy</h2>
+        <p>
+          We may update this privacy policy as our experiments and features evolve. 
+          Changes will be posted on this page with an updated "last modified" date.
+        </p>
+      </section>
+
+      <section>
+        <h2>📧 Contact</h2>
+        <p>Questions about privacy? Reach out:</p>
+        <ul>
+          <li>Email: <a href="mailto:privacy@charlesgum.com">privacy@charlesgum.com</a></li>
+          <li>Website: <a href="https://charlesgum.com/contact">Contact Form</a></li>
+        </ul>
+      </section>
+		</div>
+	</main>
+</BaseLayout>
+
+<style>
+.privacy-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.container h1 {
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.last-updated {
+  color: #6b7280;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.privacy-page section {
+  margin-bottom: 2rem;
+}
+
+.privacy-page h2 {
+  color: #1f2937;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.privacy-page h3 {
+  color: #374151;
+  margin-top: 1.5rem;
+}
+
+.cookie-notice {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.privacy-page code {
+  background: #f3f4f6;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+}
+
+.privacy-page a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.privacy-page ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.privacy-page li {
+  margin-bottom: 0.5rem;
+}
+</style>

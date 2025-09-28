@@ -5,13 +5,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "About Me"
 
 const identity = {
-	firstName: "Sarah",
-	country: "Canada",
-	occupation: "Technical Writer",
-	hobbies: ["photography", "birdwatching", "baseball"],
+	firstName: "Charles",
+	country: "U.S.A",
+	occupation: "Web Developer",
+	hobbies: ["Comic Books", "music", "baseball"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs", "SvelteKit", "GO"];
 
 const happy = true;
 const finished = false;
@@ -34,7 +34,9 @@ const textCase = "uppercase";
 	}
 </style>
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout
+	title={pageTitle}
+>
 	<h2>...And my new Astro site!</h2>
 
 	<p>I am experimenting with Astro for static site generation and working through the tutorial.</p>
